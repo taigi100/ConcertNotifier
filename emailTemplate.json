@@ -2,6 +2,6 @@
   "Template": {
     "TemplateName": "Concert_Notifier4",
     "SubjectPart": "Concert Notifier",
-    "HtmlPart": "<h1>Concert Notifier</h1><p>{{#each concerts}}<h3>{{displayName}}</h3><p>{{start.date}}</p><p>Distance: {{distance}} KM</p><p>{{uri}}</p>{{/each}}</p>"
+    "HtmlPart": "<h1>Concert Notifier</h1><p>{{#each concerts}}<h3>{{displayName}}</h3><p>{{start.date}}</p><p>Distance: {{distance}} KM</p><p>{{uri}}</p><p><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text={{displayName}}&dates={{start.date}}/{{start.date}}">Add event to my google calendar</a></p>{{/each}}</p>"
   }
 }
