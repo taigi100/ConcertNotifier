@@ -48,7 +48,7 @@ func (provider songKickConnector) GetAllEvents(cfg interface{}) ([]Event, error)
 	if err != nil {
 		return nil, fmt.Errorf("Failed to get artists user is following")
 	}
-	//Time to add in some events ^_^
+
 	var retVal []Event
 	for _, artist := range artists {
 		artistEvents, err := provider.getAllArtistsConcerts(artist)

@@ -70,7 +70,7 @@ func getUserEvents(w lux.ResponseWriter, r *lux.Request) {
 	if err != nil {
 		fmt.Errorf("failed to download file, %v", err)
 	}
-
+	w.Write([]byte("Ana are mere"))
 	fmt.Println(out)
 }
 
